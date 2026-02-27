@@ -1,11 +1,5 @@
-# Unsupervised human-to-robot motion retargeting via expressive latent space
+# TransDexNet: An End-to-end Motion Retargeting Network with Transformer for Dexterous Hand Teleoperation from RGB Images
 
+Webpage for "TransDexNet: An End-to-end Motion Retargeting Network with Transformer for Dexterous Hand Teleoperation from RGB Images"（2026 ICRA）
 
-Webpage for "Unsupervised human-to-robot motion retargeting via expressive latent space"
-- Yashuai Yan
-- Esteve Valls Mascaro
-- Dongheui Lee
-
-Autonomous Systems, TU Wien, 1040 Wien
-German Aerospace Center (DLR)
                 
