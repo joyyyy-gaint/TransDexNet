@@ -1,1 +1,1 @@
-Figures overview for the webpage
+Figures and videos for the webpage.
