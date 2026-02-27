@@ -160,12 +160,7 @@
         <div class="columns is-centered has-text-centered">
             <div class="item">
           <p style="margin-bottom: 30px">
-<!--
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="static/figures/MDM-page.mp4"
-          type="video/mp4">
-        </video>
- --><br><br>
+    <br><br>
         </p>
         </div>
             </div>
@@ -182,32 +177,35 @@
     <div class="container">
 
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/modeloverview.jpg" alt="Architecture of our ImitationNet"/>
+        <img src="static/figures/TransDexNet-project-network.png" alt="Architecture of TransDexNet"/>
       </div>    
+
+    </div>
   </div>
-</div>
-</div>
 </section>
 
 
-      <section class="section hero is-light">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
+
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Human Motion Retargeting From Videos</h2>
-          <p>
 
-            We estimate the human pose from RGB images using an off-the-shelf pose estimator and we feed our ImitationNet model with the predicted human pose. Our model can control the real TiaGo robot in real-time thanks to its light-weight design with a high-accuracy in the retargeting.
+        <h2 class="title is-3">Architecture of TransDexNet</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            TransDexNet adopts a dual-branch Transformer architecture to learn the mapping between human hand images and dexterous hand joint configurations. Two independent Vision Transformer (ViT) backbones encode images of the human hand and the robot hand, respectively, extracting high-level visual representations in each domain. An alignment layer is then applied to synchronize their latent features within a shared embedding space, effectively reducing the domain gap. The aligned features are further processed by a Transformer decoder to refine feature relationships and enhance representation consistency. Finally, a shared regression head directly predicts the 22-dimensional joint angles of the dexterous hand, enabling accurate and efficient end-to-end motion retargeting from RGB images.
           </p>
         </div>
+
       </div>
     </div>
-    <!--/ Abstract. -->
-  </div>
-</section> 
 
-    
+  </div>
+</section>
+
+  
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
