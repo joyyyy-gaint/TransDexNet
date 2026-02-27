@@ -156,7 +156,7 @@
          <h2 class="title is-3">Overview</h2> 
         <div class="content has-text-justified">
           <p>
-            Overview of the vision-based teleoperation pipeline. The framework is based on the end-to-end retargeting network TransDexNet, which maps a single RGB image of a human hand directly to the joint angles of a dexterous hand.
+            A monocular RGB camera captures the human hand in real time and feeds the image directly into TransDexNet. The network extracts visual features through a Transformer-based encoder and performs cross-domain feature alignment between human and robotic hand representations in a shared latent space. Based on the aligned features, the regression head predicts the target dexterous hand joint angles in a single forward pass. These predicted joint commands are then transmitted to the dexterous hand controller, enabling the robot to reproduce the human hand motion with low latency and high fidelity. 
         <div class="columns is-centered has-text-centered">
             <div class="item">
           <p style="margin-bottom: 30px">
